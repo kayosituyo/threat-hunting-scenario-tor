@@ -54,11 +54,11 @@ Searched the DeviceProcessEvents table for any ProcessCommandline  that containe
 
 DeviceProcessEvents
 | where DeviceName == "corp-guy7-tuy"
-| where ProcessCommandLine contains "tor-browser-windows"
+| where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-15.0.19.exe"
 | project Timestamp, DeviceName,AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b07ac4b4-9cb3-4834-8fac-9f5f29709d78">
+<img width="1212" alt="image" src="https://github.com/kayosituyo/threat-hunting-scenario-tor/blob/main/DeviceProcessEvents2.jpeg">
 
 ---
 
